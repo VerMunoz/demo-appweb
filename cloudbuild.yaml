@@ -3,6 +3,6 @@ steps:
     args: ["install", "github.com/VerMunoz/demo-appweb"]
     env: ["PROJECT_ROOT=github.com/VerMunoz/demo-appweb"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/spinnaker-224522/demo-appweb:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/spin-230020/demo-appweb:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/spinnaker-224522/demo-appweb:$REVISION_ID"
+  - "gcr.io/spin-230020/demo-appweb:$REVISION_ID"
