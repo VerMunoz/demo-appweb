@@ -12,7 +12,7 @@ type Welcome struct {
 }
 
 func main() {
-	welcome := Welcome{"  :) ", time.Now().Format(time.Stamp)}
+	welcome := Welcome{":D ", time.Now().Format(time.Stamp)}
 
 	templates := template.Must(template.ParseFiles("templates/welcome-template.html"))
 	http.Handle("/static/", //final url can be anything
